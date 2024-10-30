@@ -24,10 +24,6 @@ public class ProductService {
             maxPriorityQueue.add(new Pair<>(product, combinedValue));
         }
 
-        for(Pair<Product, Integer> pair: maxPriorityQueue){
-            System.out.println(pair.getValue());
-        }
-
         List<Product> sortedProduct = new ArrayList<>();
         while (!maxPriorityQueue.isEmpty()) {
             sortedProduct.add(maxPriorityQueue.poll().getKey());
