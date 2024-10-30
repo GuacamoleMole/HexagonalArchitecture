@@ -54,6 +54,6 @@ View the openapi.yml with a tool such as [swagger](https://editor.swagger.io/) t
 ## Algorithm explanation
 The product sorting algorithm orders a list of products based on two configurable weights: sales weight and stock weight. These weights determine the influence of each factor in the sorting priority.
 
-I apply the following formula to calculate the priority of each product, and later sort of highest to lowest:  
+I use the following formula to calculate the priority of each product, and later sort them from highest to lowest:  
 
 $ProductScore=(nªsales×salesWeight)+(nªstock×stockWeight)$
