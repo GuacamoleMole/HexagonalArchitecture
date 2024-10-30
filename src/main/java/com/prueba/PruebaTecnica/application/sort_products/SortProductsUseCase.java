@@ -15,7 +15,7 @@ public class SortProductsUseCase {
 
     public SortProductResponse execute(SortProductsRequest request) {
         List<Product> products = productService.sortProducts(request.getSalesWeight(), request.getStockWeight(), request.getProducts());
-        SortProductResponse response = SortProductResponse.builder().build();
+        SortProductResponse response = new SortProductResponse();
         for(Product product : products){
             response.getProductIds().add(product.getProductId());
         }
